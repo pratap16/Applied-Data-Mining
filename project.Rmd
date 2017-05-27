@@ -25,7 +25,7 @@ library(caret)
 # Exploratory Analysis
 ```{r}
 
-setwd("F:\rockhurst\02Applied Data Mining\project\Applied-Data-Mining")
+setwd("F:\\rockhurst\\02Applied Data Mining\\project\\Applied-Data-Mining")
 House<-read.table("ecohome.csv",sep=",",head=T)
 
 
