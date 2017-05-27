@@ -2,7 +2,9 @@
 title: "Project:Energy Efficiency of Buildings"
 author: "Pratap Timilsina"
 date: "December 17, 2016"
-output: html_document
+output: 
+  html_document:
+    keep_md: true
 ---
 
 
@@ -21,6 +23,8 @@ library(randomForest)
 library(caret)
 
 ```
+
+
 
 # Exploratory Analysis
 ```{r}
@@ -49,6 +53,12 @@ Cooling.Load <- House$Y2
 ```
 
 We are able to see the summary statistics of 8 input parameters and 2 output efficiency parameters.
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "figure-html/README-"
+)
+```
 
 #Correlation
 ```{r}
